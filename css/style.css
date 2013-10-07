@@ -1,0 +1,72 @@
+body {
+					width:940px;	
+					font: 80%/1.2 Arial, Helvetica, sans-serif;
+					margin:30px auto;
+					color:#666;
+					padding:0;
+					}
+				.label_check {
+					width:203px;
+					display:block;
+					float:left;
+					display:inline;
+					margin-left:31px;
+					}
+				.fieldset{border:1px solid #ccc;padding:10px;}
+				
+				.title_check {
+					font-weight:bold;
+					border:1px solid #ccc;
+					padding:1px 4px;
+					}
+				.label_check .fabricante {
+					font-weight:bold;
+					margin:0;
+					}
+				.form_geral .div_mudar {margin:15px 0 0 0;}
+				/* CSS para efeitos jQuery */
+				.mudar {
+					background:#fceed4;
+					padding:10px 0;
+					margin-top:10px;
+					width:100%;
+					overflow:auto;
+					}
+				.legenda {
+					margin:0 0 10px 0;
+					background:#ffb600;
+					padding:2px 5px;
+					font-size:25px;
+					}
+				.fieldset {border-style:dotted;}
+				.fieldset .label_check {margin-bottom:10px;}
+				/* Fim CSS para efeitos jQuery */
+
+				.title_campos{
+					font-size: 18px;
+				}
+				.input_text{
+					width: 840px;
+					line-height: 100px;
+				}
+				.input_dados{
+					width: 300px;
+					line-height: 100px;
+				}
+				.input_loc{
+					width: 200px;
+					line-height: 100px;
+				}
+				.operadora{
+					width: 80px;
+					padding-top: 2px;
+				}
+				.btn_add{
+					padding-top: 41px;
+				}
+				.input_radio{
+					line-height: 50px;
+				}
+				.opc_2{
+					margin-left: 20px;
+				}

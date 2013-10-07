@@ -1,0 +1,153 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Cadastro de Professores </title>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+			<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+			<script type="text/javascript" src="js/script_check.js"></script>
+	</head>
+	<body>
+		<h1> Cadastro de Professores </h1>
+		<form action="" method="get" id="formulario" class='form_geral'>
+			<fieldset>
+				<label class='title_campos'>Nome Completo</label>
+				<input class='input_text' type="text" placeholder="Digite seu nome completo...">
+				<span class="help-block">Exemplo: Marcelo Silva</span>
+				</label>
+
+				<div class="row-fluid">
+					<div class="span6">
+						<label class='title_campos'>Identidade (RG)</label>
+						<input class='input_dados' type="text" placeholder="Digite sua identidade">
+						<span class="help-block">Exemplo: 111000111-1</span>
+						</label>
+					</div>
+
+					<div class="span6">
+						<label class='title_campos'>CPF</label>
+						<input class='input_dados' type="text" placeholder="Digite seu CPF">
+						<span class="help-block">Exemplo: 000.000.000-00</span>
+						</label>
+					</div>
+				</div>
+				<label class='title_campos'>Email</label>
+				<input class='input_text' type="text" placeholder="Digite seu email">
+				<span class="help-block">Exemplo: seunome@seunome</span>
+				</label>
+				
+				<label class='title_campos'>Endereço</label>
+				<input class='input_text' type="text" placeholder="Digite seu endereço">
+				<span class="help-block">Exemplo: Rua Maria das Graças, 125</span>
+				</label>
+
+				<div class="row-fluid">
+					<div class="span4">
+						<label class='title_campos'>Bairro</label>
+						<input class='input_loc' type="text" placeholder="Digite seu bairro">
+						<span class="help-block">Exemplo: Morumbi</span>
+						</label>
+					</div>
+
+					<div class="span4">
+						<label class='title_campos'>Cidade</label>
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="span4">
+						<label class='title_campos'>CEP</label>
+						<input class='input_loc' type="text" placeholder="Digite seu CEP">
+						<span class="help-block">Examplo: 00000-111</span>
+						</label>
+					</div>
+					<label class='title_campos'>Telefone Residêncial</label>
+						<input class='input_dados' type="text" placeholder="Digite seu Telefone">
+						<span class="help-block">Exemplo: 21 0000-1010</span>
+						</label>
+						<div class="row-fluid">
+					<div class="span4">
+						<label class='title_campos'>Telefone Celular</label>
+							<input class='input_loc' type="text" placeholder="Digite seu celular">
+							<p>Operadora</p>
+								<select class='operadora'>
+									<option>Oi</option>
+									<option>Tim</option>
+									<option>Claro</option>
+									<option>Vivo</option>
+									<option>Nextel</option>
+								</select> 
+						</label>
+					</div>
+
+					<div class="span4">
+						<label class='title_campos'>Telefone Celular</label>
+							<input class='input_loc' type="text" placeholder="Digite seu celular">
+								<p>Operadora</p>
+								<select class='operadora'>
+									<option>Oi</option>
+									<option>Tim</option>
+									<option>Claro</option>
+									<option>Vivo</option>
+									<option>Nextel</option>
+								</select> 
+							</label>
+					</div>
+				</fieldset>
+				<hr>
+				<h1> Formação </h1>
+				
+					<fieldset>
+						<div class="row-fluid">
+							<div class="span6">
+								<label class='title_campos'>Curso</label>
+								<input class='input_loc' type="text" placeholder="Digite seu bairro">
+								<span class="help-block">Exemplo: Química</span>
+								</label>
+							</div>
+							<div class="span6">
+								<label class='title_campos'>Instituição de Ensino</label>
+								<input class='input_dados' type="text" placeholder="Digite seu bairro">
+								</label>
+								<br>
+									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Completo
+									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Incompleto
+								
+							</div>
+						</div>
+
+						
+
+					</fieldset> 
+					<fieldset class='fieldset'>
+						<legend class='title_check'> Disciplinas a Lecionar</legend>
+							<div class="mudar div_mudar">
+								<label class='label_check'><input class='input_check' type="checkbox" value='class_A' /> Classe A - Hacthback</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe B - MPV</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe C - Sedã </label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe SLK - Roadster</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe CL - Coupé</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe CLK - Coupé</label>
+								<label class='label_check' ><input class='input_check' type="checkbox" /> Classe CLK - Cabriolet</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe M - Sport Utility</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe R - Crossover</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> 599 GTB</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> California 2009</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> 250 GT SWB</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> F430 Scuderia</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Mastretta MXT</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> 612 Scaglietti </label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> FXX Evolution</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Ferrari 612 top car</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> P4/5</label>
+							</div>
+					</fieldset>
+		</form>
+	</body>
+</html>
