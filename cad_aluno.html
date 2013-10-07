@@ -1,0 +1,444 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Cadastro de Professores </title>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+			<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+			<script type="text/javascript" src="js/script_check.js"></script>
+			<script type="text/javascript" src="js/estudo.js"></script>
+	</head>
+	<body>
+		<h1> Cadastro do Aluno </h1>
+		<form action="" method="get" id="formulario" class='form_geral'>
+			<fieldset>
+				<label class='title_campos'>Nome Completo</label>
+				<input class='input_text' type="text" placeholder="Digite seu nome completo...">
+				<span class="help-block">Exemplo: Marcelo Silva</span>
+				</label>
+
+				<div class="row-fluid">
+					<div class="span6">
+						<label class='title_campos'>Data de Nascimento</label>
+						<input class='input_dados' type="text" placeholder="Digite sua identidade">
+						<span class="help-block">Exemplo: 111000111-1</span>
+						</label>
+					</div>
+
+					<div class="span6">
+						<label class='title_campos'>Sexo</label>
+							<select class='select_small'>
+								<option value='masculino'>Masculino</option>
+								<option value='feminino'>Feminino</option>
+							</select>
+						</label>
+					</div>
+				</div>
+				<label class='title_campos'>Email</label>
+				<input class='input_text' type="text" placeholder="Digite seu email">
+				<span class="help-block">Exemplo: seunome@seunome</span>
+				</label>
+				
+				<label class='title_campos'>Endereço</label>
+				<input class='input_text' type="text" placeholder="Digite seu endereço">
+				<span class="help-block">Exemplo: Rua Maria das Graças, 125</span>
+				</label>
+
+				<div class="row-fluid">
+					<div class="span4">
+						<label class='title_campos'>Bairro</label>
+						<input class='input_loc' type="text" placeholder="Digite seu bairro">
+						<span class="help-block">Exemplo: Morumbi</span>
+						</label>
+					</div>
+
+					<div class="span4">
+						<label class='title_campos'>Cidade</label>
+							<select class='select_small'>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="span4">
+						<label class='title_campos'>CEP</label>
+						<input class='input_loc' type="text" placeholder="Digite seu CEP">
+						<span class="help-block">Examplo: 00000-111</span>
+						</label>
+					</div>
+					<label class='title_campos'>Telefone Residêncial</label>
+						<input class='input_dados' type="text" placeholder="Digite seu Telefone">
+						<span class="help-block">Exemplo: 21 0000-1010</span>
+						</label>
+						<div class="row-fluid">
+					<div class="span4">
+						<label class='title_campos'>Telefone Celular</label>
+							<input class='input_loc' type="text" placeholder="Digite seu celular">
+							<p>Operadora</p>
+								<select class='operadora'>
+									<option>Oi</option>
+									<option>Tim</option>
+									<option>Claro</option>
+									<option>Vivo</option>
+									<option>Nextel</option>
+								</select> 
+						</label>
+					</div>
+
+					<div class="span4">
+						<label class='title_campos'>Telefone Celular</label>
+							<input class='input_loc' type="text" placeholder="Digite seu celular">
+								<p>Operadora</p>
+								<select class='operadora'>
+									<option>Oi</option>
+									<option>Tim</option>
+									<option>Claro</option>
+									<option>Vivo</option>
+									<option>Nextel</option>
+								</select> 
+							</label>
+					</div>
+				</fieldset>
+				<hr>
+					<h1> Disponibilidade de Horário </h1>
+
+						<table id="horario">
+								<caption>
+								Disponibilidade para assistir às aulas: (Marque os horários disponíveis) 
+
+								</caption>
+								<thead>
+									<tr id="horizontal">
+										<th> Horario </th>
+										<th scope="col">Seg</th>
+										<th scope="col">Ter</th>
+										<th scope="col">Qua </th>
+										<th scope="col">Qui </th>
+										<th scope="col">Sex</th>
+										<th scope="col">Sab</th>
+										<th scope="col">Dom</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td colspan="8">Válida para o período de 02/10/2008 a 30/11/ 2008.</td>
+									</tr>
+								</tfoot>
+							<tbody>
+									<tr>
+										<th scope="row">08:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">09:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">10:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">11:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">12:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">13:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">14:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">15:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">16:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">17:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">18:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">19:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">20:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">21:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">22:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+
+									
+								</tbody>
+							</table>
+								<label>
+									Observações: (Dica: Preencher com datas de provas, comportamento do aluno, principais dificuldades, informações que ajudariam o professor a se relacionar com o aluno.) 
+								</label>
+								<textarea class='experiencia' rows='10' cols='80'></textarea>
+
+
+
+					<h1> Objetivo do Reforço </h1>
+						<fieldset>
+						<div class="row-fluid">
+
+							<div class="span6">
+								<label class="checkbox">
+									<input type="checkbox" value=""> Recuperação de Notas
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" value=""> Preparatório
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" value="">Dependência</label> <input type='text' class='input_maior' placeholder='Quais disciplinas?'> 
+							</div>	
+								<div class="span6">
+								<label class="checkbox">
+									<input type="checkbox" value=""> Reforço (transferência escolar)
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" value=""> Acompanhamento (rotina de estudo)
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" value="">Outros</label> <input type='text' class='input_maior' placeholder='Disciplinas?'> 
+							</div>
+						</div>
+						<label> O aluno é responsável financeiro? </label>
+							<input type="radio" name="optionsRadios" class="resp_sim" value="sim"> Sim
+							<input type="radio" name="optionsRadios" class="resp_nao" value="nao"> Não
+
+					<!-- É Responsável Financeiro -->
+					<div class="row-fluid responsavel_financas">
+						<div class="span6">
+							<label class='title_campos'>RG</label>
+							<input class='input_dados' type="text" placeholder="Digite sua identidade">
+							<span class="help-block">Exemplo: 111000111-1</span>
+							</label>
+						</div>
+
+						<div class="span6">
+							<label class='title_campos'>CPF</label>
+							<input class='input_dados' type="text" placeholder="Digite sua identidade">
+							<span class="help-block">Exemplo: 000.000.00-00</span>
+							</label>
+						</div>
+						<label class='title_campos'>Profissão:</label>
+							<input class='input_text' type="text" placeholder="Digite a Profissão">
+							<span class="help-block">Exemplo: Digite a Profissão</span>
+						</label>
+					</div>
+
+						<!-- Não é Responsável Financeiro -->
+						<div class='nao_financas'>
+							<h1> Dados do responsável Financeiro </h1>
+								<label class='title_campos'>Nome Completo:</label>
+								<input class='input_text' type="text" placeholder="Digite seu nome completo">
+								<span class="help-block">Exemplo: Marcela Silva</span>
+							
+								<div class="row-fluid nao_financas">
+										
+									
+								<div class="span6">
+
+								</label>
+									<label class='title_campos'>RG</label>
+									<input class='input_dados' type="text" placeholder="Digite sua identidade">
+									<span class="help-block">Exemplo: 111000111-1</span>
+									</label>
+								</div>
+
+								<div class="span6">
+									<label class='title_campos'>CPF</label>
+									<input class='input_dados' type="text" placeholder="Digite sua identidade">
+									<span class="help-block">Exemplo: 000.000.00-00</span>
+									</label>
+								</div>
+								<label class='title_campos'>Profissão:</label>
+									<input class='input_text' type="text" placeholder="Digite a Profissão">
+									<span class="help-block">Exemplo: Digite a Profissão</span>
+								</label>
+							</div>
+							<label class='title_campos'>Endereço</label>
+				<input class='input_text' type="text" placeholder="Digite seu endereço">
+				<span class="help-block">Exemplo: Rua Maria das Graças, 125</span>
+				</label>
+
+				<div class="row-fluid">
+					<div class="span4">
+						<label class='title_campos'>Bairro</label>
+						<input class='input_loc' type="text" placeholder="Digite seu bairro">
+						<span class="help-block">Exemplo: Morumbi</span>
+						</label>
+					</div>
+
+					<div class="span4">
+						<label class='title_campos'>Cidade</label>
+							<select class='select_small'>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</label>
+					</div>
+
+					<div class="span4">
+						<label class='title_campos'>CEP</label>
+						<input class='input_loc' type="text" placeholder="Digite seu CEP">
+						<span class="help-block">Examplo: 00000-111</span>
+						</label>
+					</div>
+					<label class='title_campos'>Telefone Residêncial</label>
+						<input class='input_dados' type="text" placeholder="Digite seu Telefone">
+						<span class="help-block">Exemplo: 21 0000-1010</span>
+						</label>
+						<div class="row-fluid">
+					<div class="span4">
+						<label class='title_campos'>Telefone Celular</label>
+							<input class='input_loc' type="text" placeholder="Digite seu celular">
+							<p>Operadora</p>
+								<select class='operadora'>
+									<option>Oi</option>
+									<option>Tim</option>
+									<option>Claro</option>
+									<option>Vivo</option>
+									<option>Nextel</option>
+								</select> 
+						</label>
+					</div>
+
+					<div class="span4">
+						<label class='title_campos'>Telefone Celular</label>
+							<input class='input_loc' type="text" placeholder="Digite seu celular">
+								<p>Operadora</p>
+								<select class='operadora'>
+									<option>Oi</option>
+									<option>Tim</option>
+									<option>Claro</option>
+									<option>Vivo</option>
+									<option>Nextel</option>
+								</select> 
+							</label>
+					</div>
+						</div>
+				
+						
+					</fieldset>
+
+
+		</form>
+	</body>
+</html>

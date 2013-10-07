@@ -1,72 +1,151 @@
 body {
-					width:940px;	
-					font: 80%/1.2 Arial, Helvetica, sans-serif;
-					margin:30px auto;
-					color:#666;
-					padding:0;
-					}
-				.label_check {
-					width:203px;
-					display:block;
-					float:left;
-					display:inline;
-					margin-left:31px;
-					}
-				.fieldset{border:1px solid #ccc;padding:10px;}
-				
-				.title_check {
-					font-weight:bold;
-					border:1px solid #ccc;
-					padding:1px 4px;
-					}
-				.label_check .fabricante {
-					font-weight:bold;
-					margin:0;
-					}
-				.form_geral .div_mudar {margin:15px 0 0 0;}
-				/* CSS para efeitos jQuery */
-				.mudar {
-					background:#fceed4;
-					padding:10px 0;
-					margin-top:10px;
-					width:100%;
-					overflow:auto;
-					}
-				.legenda {
-					margin:0 0 10px 0;
-					background:#ffb600;
-					padding:2px 5px;
-					font-size:25px;
-					}
-				.fieldset {border-style:dotted;}
-				.fieldset .label_check {margin-bottom:10px;}
-				/* Fim CSS para efeitos jQuery */
+	width:940px;	
+	font: 80%/1.2 Arial, Helvetica, sans-serif;
+	margin:30px auto;
+	color:#666;
+	padding:0;
+	}
+.label_check {
+	width:203px;
+	display:block;
+	float:left;
+	display:inline;
+	margin-left:31px;
+	}
+.fieldset{border:1px solid #ccc;padding:10px;}
 
-				.title_campos{
-					font-size: 18px;
-				}
-				.input_text{
-					width: 840px;
-					line-height: 100px;
-				}
-				.input_dados{
-					width: 300px;
-					line-height: 100px;
-				}
-				.input_loc{
-					width: 200px;
-					line-height: 100px;
-				}
-				.operadora{
-					width: 80px;
-					padding-top: 2px;
-				}
-				.btn_add{
-					padding-top: 41px;
-				}
-				.input_radio{
-					line-height: 50px;
-				}
-				.opc_2{
-					margin-left: 20px;
-				}
+.title_check {
+	font-weight:bold;
+	border:1px solid #ccc;
+	padding:1px 4px;
+	}
+.title_loc {
+	font: Arial,Helvetica,sans-serif;
+	color: rgb(102, 102, 102);
+	border:1px solid #ccc;
+	padding:1px 4px;
+	background: none repeat scroll 0% 0% rgb(255, 182, 0);
+	width:900px;
+	display:block;
+	float:left;
+	display:inline;
+	}
+.label_check .fabricante {
+	font-weight:bold;
+	margin:0;
+	}
+.form_geral .div_mudar {margin:15px 0 0 0;}
+/* CSS para efeitos jQuery */
+.mudar {
+	background:#fceed4;
+	padding:10px 0;
+	margin-top:10px;
+	width:100%;
+	overflow:auto;
+	}
+.legenda {
+	margin:0 0 10px 0;
+	background:#ffb600;
+	padding:2px 5px;
+	font-size:25px;
+	}
+.fieldset {border-style:dotted;}
+.fieldset .label_check {margin-bottom:10px;}
+/* Fim CSS para efeitos jQuery */
+
+.title_campos{
+	font-size: 18px;
+}
+.input_text{
+	width: 840px;
+	line-height: 100px;
+}
+.input_dados{
+	width: 300px;
+	line-height: 100px;
+}
+.input_loc{
+	width: 200px;
+	line-height: 100px;
+}
+.operadora{
+	width: 80px;
+	padding-top: 2px;
+}
+.btn_add{
+	padding-top: 41px;
+}
+.input_radio{
+	line-height: 50px;
+}
+.opc_2{
+	margin-left: 20px;
+}
+.input_menor{
+	width: 80px;
+	height: 30px !important;
+}
+.input_maior{
+	width: 300px;
+	height: 30px !important;
+}
+.input_cpf{
+	width: 120px;
+	height: 30px !important;
+}
+.select_small{
+	height: 40px;
+}
+.previsao{
+	color:red;
+	margin-top: 10px;
+}
+.dia_conclusao{
+	display: none;
+}
+.data_conclusao{
+	display: none;
+}
+.experiencia{
+	width: 940px;
+}
+
+/* TABELA HORARIOS */
+
+table {
+	width:940px;
+	border-collapse: collapse;
+	border: 2px solid #999;
+	
+	}
+caption { 
+	text-align: right;
+	margin-bottom: 0.3em;
+	border-bottom: 1px solid #333;
+	padding-right: 0.3em;
+}
+thead tr th {
+	text-align:center;
+	border-bottom: 2px solid #999;
+	border-left: 2px solid #999;
+	}
+tr td, tr th {
+	padding: 1px 5px;
+	text-align:center;
+	font-size: 0.9em;
+	border: 1px dotted #333;
+	} 
+tfoot tr td {
+	text-align:center;
+	border-top: 2px solid #999;
+	}
+.marca{
+	background: red;
+}
+.responsavel_financas{
+	display: none;
+}
+.nao_financas{
+	display: none;
+}
+

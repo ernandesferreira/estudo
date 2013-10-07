@@ -6,6 +6,7 @@
 			<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 			<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
 			<script type="text/javascript" src="js/script_check.js"></script>
+			<script type="text/javascript" src="js/estudo.js"></script>
 	</head>
 	<body>
 		<h1> Cadastro de Professores </h1>
@@ -104,26 +105,37 @@
 				<h1> Formação </h1>
 				
 					<fieldset>
-						<div class="row-fluid">
+						<div class="row-fluid formacao">
+
 							<div class="span6">
 								<label class='title_campos'>Curso</label>
 								<input class='input_loc' type="text" placeholder="Digite seu bairro">
 								<span class="help-block">Exemplo: Química</span>
 								</label>
 							</div>
-							<div class="span6">
+							<div class="span6 inst">
 								<label class='title_campos'>Instituição de Ensino</label>
 								<input class='input_dados' type="text" placeholder="Digite seu bairro">
 								</label>
-								<br>
-									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Completo
-									<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Incompleto
-								
+								<br />
+									<input type="radio" name="optionsRadios" class="completo" value="completo"> Completo
+									<input type="radio" name="optionsRadios" class="imcompleto" value="imconpleto"> Incompleto
+										<div class='dia_conclusao'>
+											<p class='previsao'> Previsão de Conclusão <input class='input_menor' type='text' name='mes_conc' /> / <input class='input_menor' type='text' name='ano_conc' /> <span class="help-block">Exemplo: 02/2014</span></p>
+										</div>
+										<div class='data_conclusao'>
+											<p class='previsao'> Data de Conclusão <input class='input_menor' type='text' name='mes_conc' /> / <input class='input_menor' type='text' name='ano_conc' /> <span class="help-block">Exemplo: 02/2014</span></p>
+										</div>
 							</div>
 						</div>
-
+						<div class='add_form'>
+							<div class='btn btn-success add_form'> + </div>
+							<div class='btn btn-danger remove_form'> - </div>
+						</div>
 						
-
+					</fieldset>
+					<hr>
+					<h1> Dados Profissionais </h1>
 					</fieldset> 
 					<fieldset class='fieldset'>
 						<legend class='title_check'> Disciplinas a Lecionar</legend>
@@ -148,6 +160,253 @@
 								<label class='label_check'><input class='input_check' type="checkbox" /> P4/5</label>
 							</div>
 					</fieldset>
+					
+					<h1> Experiência Profissional </h1>
+
+					<label class='title_campos'>Descreva sua Experiência Profissional</label>
+					<textarea class='experiencia' rows='20' cols='100'></textarea>
+
+					<h1> Disponibilidade de Local </h1>
+					<fieldset class='fieldset'>
+						<legend class='title_loc'> Selecione os Locais</legend>
+							<div class="mudar div_mudar">
+								<label class='label_check'><input class='input_check' type="checkbox" value='class_A' /> Classe A - Hacthback</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe B - MPV</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe C - Sedã </label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe SLK - Roadster</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe CL - Coupé</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe CLK - Coupé</label>
+								<label class='label_check' ><input class='input_check' type="checkbox" /> Classe CLK - Cabriolet</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe M - Sport Utility</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Classe R - Crossover</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> 599 GTB</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> California 2009</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> 250 GT SWB</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> F430 Scuderia</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Mastretta MXT</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> 612 Scaglietti </label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> FXX Evolution</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> Ferrari 612 top car</label>
+								<label class='label_check'><input class='input_check' type="checkbox" /> P4/5</label>
+							</div>
+					</fieldset>
+					
+					<h1> Disponibilidade de Horário </h1>
+
+						<table id="horario">
+								<caption>
+								Disponibilidade de horários para as aulas
+								</caption>
+								<thead>
+									<tr id="horizontal">
+										<th> Horario </th>
+										<th scope="col">Seg</th>
+										<th scope="col">Ter</th>
+										<th scope="col">Qua </th>
+										<th scope="col">Qui </th>
+										<th scope="col">Sex</th>
+										<th scope="col">Sab</th>
+										<th scope="col">Dom</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td colspan="8">Válida para o período de 02/10/2008 a 30/11/ 2008.</td>
+									</tr>
+								</tfoot>
+							<tbody>
+									<tr>
+										<th scope="row">08:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">09:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">10:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">11:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">12:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">13:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">14:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">15:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">16:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">17:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">18:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">19:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">20:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">21:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">22:00</th>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+
+									
+								</tbody>
+							</table>
+
+					<h1> Dados Bancários </h1>
+						<fieldset>
+						<div class="row-fluid formacao">
+
+							<div class="span6">
+								<label class='title_campos'>Tipo de Conta</label>
+									<select>
+										<option>Conta Poupança</option>
+										<option>Conta Corrente</option>
+									</select>
+								<label class='title_campos'>Banco</label>
+									<input class='input_loc' type="text" placeholder="Digite o nome do seu banco">
+									<span class="help-block">Exemplo: Itaú</span>
+								</label>
+								<label class='title_campos'>Número da Conta </label>
+								<input class='input_dados' type="text" placeholder="Digite o numero da sua conta">
+								</label>
+							</div>
+							<div class="span6 banco">
+								
+								<br />
+									<input type="radio" name="optionsRadios" class="titular" value="titular"> Sou Titular <br/> 
+									<input type="radio" name="optionsRadios" class="no_titular" value="no_titular"> Não sou Titular
+										<div class='dados_titular'>
+											<p><label> Nome Completo do Titular:</label> <input type='text' name='mes_conc' class='input_maior' /> 
+											<p><label> CPF do Titular:</label><input type='text' name='mes_conc' class='input_cpf' /> 
+										</div>
+							</div>
+						</div>
+						<div class='add_form'>
+							<div class='btn btn-success add_form'> + </div>
+							<div class='btn btn-danger remove_form'> - </div>
+						</div>
+						
+					</fieldset>
+
+
 		</form>
 	</body>
 </html>
